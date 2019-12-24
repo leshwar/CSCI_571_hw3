@@ -1,0 +1,292 @@
+body {
+  background:  #ffffff;
+  font-family: Raleway;
+  width: 850px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* CSS for Navbar Starts Here */
+.navbar {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 65;
+  z-index: 1;
+}
+
+.navbar a {
+  font-weight: 400;
+  color:  #837d81 ;
+  padding: 14px 9px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.name {
+  position: absolute; 
+  left: 105px; 
+  top: 24px;
+  font-family: "Times New Roman";
+  font-style: italic;
+  color: #48267C;
+  font-size: 19px;
+}
+
+.menu {
+  position: absolute;
+  width: 200%;
+  padding: 28px 382px;
+  font-size: 12px;
+}
+/* CSS for Navbar Ends Here */
+
+/* CSS for Background Image Starts Here */
+.parallax1 {
+  background-image: url("http://csci571.com/hw/hw3/images/coffee2.jpg");
+  height: 561px;
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-position-x: -232px;
+  background-position-y: -77px;
+  background-size: 79.5em 49em;
+
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  transform: translateZ(-3px) scale(4);
+  z-index: -1;
+}
+
+.parallax2 {
+  background-image: url("http://csci571.com/hw/hw3/images/coffee1.jpg");
+  height: 413px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: -39px;
+  background-position-y: -27px;
+  background-size: 50em 30em;
+  
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  transform: translateZ(-1px) scale(3);
+  z-index: -1;
+  margin: 0;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS fro Background Image Ends Here */
+
+/* CSS for Card Section Starts Here*/
+.intro {
+  position: absolute;
+  top: 195px;
+  left: 220px;
+  display: block;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.125);
+  width: 401px;
+  height: 223px;
+}
+
+.face-image {
+  width: 102;
+  height: 136;
+  object-fit: cover;
+  padding-top: 4px;
+  transform: scale(1.2);
+}
+
+.column3 {
+  float: left;
+  height: 260px;
+}
+
+.left3 {
+  width: 40%;
+  padding-top: 42px;
+  padding-left: 35px;
+}
+
+.right3 {
+  width: 60%;
+  padding-top: 30px;
+  padding-left: 0px;
+  margin: 0;
+}
+
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-table, tr,td {
+  margin: 0;
+  
+}
+/* CSS for Card Section Ends Here*/
+
+/*CSS for Next Section */
+.next_section {
+  
+}
+
+/* CSS for Projects Section */
+.projects {
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  height: 609px;
+  color: #ffffff;
+  padding: 274px 50px;
+  line-height: 4px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* CSS for Portfolio Section */
+.portfolio {
+  background-color: #48267C;
+  height: 500;
+  color: #ffffff;
+  width: 100%;
+  padding: 172px 94px; 
+  align-content: center;
+  display: inline-block;
+}
+
+.heading {
+  font-weight: bolder;
+  font-size: 10.8px;
+  letter-spacing: 0.4px;
+}
+
+.content {
+  font-size: 30;
+  font-weight: 500;
+}
+/* CSS for Portfolio Section Ends Here */
+
+/* CSS for Contact Starts Here */
+.contact {
+  height: 400px;
+  color: #48267C;
+  background-color: #ffffff;
+}
+
+.give_info {
+  align-content: center;
+  padding-top: 155px;
+  padding-left: 71px;
+  line-height: 11px;
+}
+
+.get_info {
+  float: left;
+  padding-top: 198px;
+  padding-left: 0px;
+}
+
+.column1 {
+  float: left;
+  color: #48267C;
+}
+
+.left{
+  width: 50%;
+}
+
+.right{
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row1 {
+  height: 550px;
+}
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.give_info_content {
+  padding: 1px;
+}
+
+.submit_button {
+  
+}
+
+input[type=text] {
+  width: 382px;
+  height: 20px;
+  margin: 3px 0px;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #48267C;
+  font-family: Raleway;
+  font-size: 11px;
+  color: #48267C;
+}
+
+textarea {
+  width: 382px;
+  height: 110px;
+  padding: 10px;
+  border: 1px solid #48267C;
+  font-family: Raleway;
+  font-size: 11px;
+  color: #48267C;
+  resize: none;
+}
+
+input[type=button] {
+  width: 75px;
+  height: 26px;
+  background-color: #48267C;
+  color: white;
+  margin: 3px 0;
+  border: none;
+  font-style: italic;
+  font-size: 14px;
+  font-family: 'Times New Roman';
+}
+
+.submit-button {
+  padding-left: 307px;
+}
+
